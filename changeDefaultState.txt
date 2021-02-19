@@ -1,0 +1,8 @@
+change line:
+
+$this->module->validateOrder((int)$this->context->cart->id, Configuration::get('PS_OS_PREPARATION'), $total, $this->module->displayName, null, array(), null, false, $customer->secure_key); 
+
+ 
+repleace with:
+ 
+$this->module->validateOrder((int)$this->context->cart->id, "ID number of State that you want", $total, $this->module->displayName, null, array(), null, false, $customer->secure_key);
