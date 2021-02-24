@@ -1,3 +1,5 @@
+Go to modules/*payment module that you want to change*/controllers/front/validate.php
+
 change line:
 
 $this->module->validateOrder((int)$this->context->cart->id, Configuration::get('PS_OS_PREPARATION'), $total, $this->module->displayName, null, array(), null, false, $customer->secure_key); 
